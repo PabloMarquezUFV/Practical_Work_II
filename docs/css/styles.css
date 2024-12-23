@@ -46,6 +46,14 @@
     transform: scale(1.1);
 }
 
+h1 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
 /* Estilo común para todas las tarjetas */
 /* Contenedor principal de las tarjetas */
 .tarjeta {
@@ -149,7 +157,43 @@ h3 {
     height: 40px;
 }
 
+/* --------------TOPIC----------------- */
+.contenedor-deepfake {
+    max-width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Sección con texto e imagen */
+.seccion-topic {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 50px; /* Espaciado entre imagen y texto */
+}
+
+/* Imágenes */
+.imagen {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+/* Texto */
+p {
+    width: 70%;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.footer-section {
+    text-align: center;
+}
 .footer-section p {
+    margin-left: 40%;
+    margin-top: 10px;
     color: white;
 }
 
