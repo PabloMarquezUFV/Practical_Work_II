@@ -46,6 +46,100 @@
     transform: scale(1.1);
 }
 
+/* Estilo común para todas las tarjetas */
+/* Contenedor principal de las tarjetas */
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    padding: 50px 0;
+}
+
+/* Estilo de la tarjeta individual */
+.tarjeta > div {
+    width: 70%;
+    max-width: 750px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Efecto de animación al pasar el mouse */
+.tarjeta > div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagen de la tarjeta */
+.tarjeta-imagen {
+    width: 100%;
+    height: 400px; /* Reducción de la altura para que se vea más equilibrada */
+    object-fit: cover;
+    border-bottom: 5px solid #f4f4f4;
+}
+
+/* Contenido dentro de la tarjeta */
+.tarjeta-contenido {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 0 0 15px 15px;
+}
+
+/* Título */
+h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333333;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Texto explicativo */
+.texto-explicativo {
+    font-size: 16px;
+    color: #777777;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Botón de acción */
+.boton {
+    padding: 14px 30px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 30px;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efecto de hover para el botón */
+.boton:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* Efecto de foco en el botón */
+.boton:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+
 .footer-section {
     width: 100%;
     background-color: #333;
