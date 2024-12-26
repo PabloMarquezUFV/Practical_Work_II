@@ -54,8 +54,21 @@ h1 {
     color: #007bff;
 }
 
-/* Estilo común para todas las tarjetas */
-/* Contenedor principal de las tarjetas */
+.footer-section {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    height: 50px;
+}
+
+
+
+
+
+/* --------------HOME----------------- */
+
 .tarjeta {
     display: flex;
     flex-direction: column;
@@ -64,7 +77,7 @@ h1 {
     padding: 50px 0;
 }
 
-/* Estilo de la tarjeta individual */
+  
 .tarjeta > div {
     width: 70%;
     max-width: 750px;
@@ -77,21 +90,21 @@ h1 {
     flex-direction: column;
 }
 
-/* Efecto de animación al pasar el mouse */
+
 .tarjeta > div:hover {
     transform: translateY(-10px);
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
 }
 
-/* Imagen de la tarjeta */
+
 .tarjeta-imagen {
     width: 100%;
-    height: 400px; /* Reducción de la altura para que se vea más equilibrada */
+    height: 400px; 
     object-fit: cover;
     border-bottom: 5px solid #f4f4f4;
 }
 
-/* Contenido dentro de la tarjeta */
+
 .tarjeta-contenido {
     padding: 30px;
     display: flex;
@@ -102,7 +115,7 @@ h1 {
     border-radius: 0 0 15px 15px;
 }
 
-/* Título */
+
 h3 {
     font-size: 2rem;
     font-weight: 600;
@@ -112,7 +125,7 @@ h3 {
     text-transform: uppercase;
 }
 
-/* Texto explicativo */
+
 .texto-explicativo {
     font-size: 16px;
     color: #777777;
@@ -121,7 +134,7 @@ h3 {
     font-family: 'Arial', sans-serif;
 }
 
-/* Botón de acción */
+
 .boton {
     padding: 14px 30px;
     background-color: #007BFF;
@@ -135,26 +148,14 @@ h3 {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Efecto de hover para el botón */
 .boton:hover {
     background-color: #0056b3;
     transform: translateY(-3px);
 }
 
-/* Efecto de foco en el botón */
 .boton:focus {
     outline: none;
     box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
-}
-
-
-.footer-section {
-    width: 100%;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    margin-top: 50px;
-    height: 50px;
 }
 
 
@@ -190,6 +191,7 @@ h3 {
     color: #007bff;
     margin-bottom: 30px;
     text-transform: uppercase;
+    margin-top: 40px;
 }
   
 .section-title:hover {
@@ -211,7 +213,6 @@ h3 {
     padding-bottom: 5px;
 }
   
-  /* List Styles */
 .section-content ul {
     list-style-type: none;
     padding-left: 0;
@@ -269,8 +270,67 @@ h3 {
 
 
 
+/* --------------DEGREE----------------- */
 
+.degree-description {
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 80px;
+}
 
+.tarjetas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.tarjeta-degree {
+    background-color: #ffffff;
+    border: 1px solid #add8e6;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 15px;
+}
+
+h2 {
+    color: #0077b6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: #005f99;
+}
+
+.tarjeta-lista {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tarjeta-lista li {
+    padding: 5px 0;
+    margin-top: 25px;
+    color: #007bff;
+}
+
+.descripcion {
+    display: block;
+    font-size: 0.7em;
+    color: #555;
+}
+
+.tarjeta-semestre {
+    margin-bottom: 10px;
+}
+
+.tarjeta-semestre h3 {
+    margin-top: 80px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
 
 
 
